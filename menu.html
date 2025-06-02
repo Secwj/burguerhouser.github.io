@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Burguer House</title>
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <!-- Nav css -->
+    <link rel="stylesheet" href="./assets/css/nav.css">
+
+    <!-- Foooter css -->
+    <link rel="stylesheet" href="./assets/css/footer.css">
+
+    <script src="https://kit.fontawesome.com/727d4fd8a6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="container-logo">
+                <i class="fa-solid fa-burger"></i>
+                <h1>BURGUER HOUSE</h1>
+            </a>
+
+            <div class="container-bars-open">
+                <i class="fa-solid fa-bars" id="bars-open"></i>
+            </div>
+
+            <div class="container-nav-list" id="nav-list">
+                <i class="fa-solid fa-xmark" id="bars-close"></i>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html">HOME</a></li>
+                    <li class="nav-item"><a href="menu.html">MENU</a></li>
+                    <li class="nav-item"><a href="contact.html">CONTACT  US</a></li>
+                    <li class="nav-item nav-item-search"><input type="text" class="input-search"><span class="container-btn-search"><button>Search</button></span></li>
+                    <span><i class="fa-solid fa-motorcycle"></i>Call for Delivery +51 923 421 245</span>
+                    <div class="container-login">
+                        
+                        <a class="btn-login" href="login.html">LOG IN</a>
+                    </div>
+                </ul>
+                
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="carousel-wrapper">
+            <section class="carousel carousel--scroll-buttons">
+                <div class="carousel__slide">
+                    <span class="text-ver-todo">See all</span>
+                    <p>Ver todo</p>
+                    
+                </div>
+                <div class="carousel__slide">
+                    <img src="./assets/img/img-carousel/img-1.webp">
+                    <p>Las Clásicas</p>
+                </div>
+                <div class="carousel__slide">
+                    <img src="./assets/img/img-carousel/img-2.webp">
+                    <p>Las Contundentes</p>
+                </div>
+                <div class="carousel__slide">
+                    <img src="./assets/img/img-carousel/img-3.webp">
+                    <p>Las de Pollo</p>
+                </div>
+                <div class="carousel__slide">
+                    <img src="./assets/img/img-carousel/img-4.webp">
+                    <p>Las XT</p>
+                </div>
+                <div class="carousel__slide">
+                    <img src="./assets/img/img-carousel/img-5.webp">
+                    <p>Las Vegetales</p>
+                </div>
+                <div class="carousel__slide">
+                    <img src="./assets/img/img-carousel/img-6.webp">
+                    <p>Complementos</p>
+                </div>
+                <div class="carousel__slide">
+                    <img src="./assets/img/img-carousel/img-7.webp">
+                    <p>Postres</p>
+                </div>
+            </section>
+            
+        </div>
+        
+        <!-- FILTERS SECTIONS  -->
+        <section class="section-filters">
+            <div class="container-info-filters">
+                <div class="info-filters">
+                        <b>1</b>
+                        <p>Filter</p>
+                        
+                </div>
+                <div class="container-filter-by">
+                        <p>Filter By:</p>
+                        <div class="details-filter-modal ">
+                            <div class="title-price-filter-modal">Prices</div>
+                            <ul class="list-price-filter-modal">
+                                <li><input type="checkbox" class="input-filter-model">Hasta S/20</li>
+                                <li><input type="checkbox" class="input-filter-model">S/21 - S/30</li>
+                                <li><input type="checkbox" class="input-filter-model">S/31 - S/50</li>
+                                <li><input type="checkbox" class="input-filter-model">S/51 +</li>
+                            </ul>
+                        </div>
+                </div>
+                    
+            </div>
+        </section>
+        
+        <!--  BURGUERS MENU SECTION -->
+        <section class="section-burguers">
+            <div class="container-filter-plus">
+                <p><span class="numbers">53</span> results</p>
+                <div class="container-order-filter">
+                    <i class="fa-solid fa-arrow-right-arrow-left" id="btn-close-modal-sort-desktop"></i>
+                    <p>Sort</p>
+                    <div class="modal-sort-desktop">
+                        <ul class="list-sort-modal-desktop">
+                            <li class="item-list-sort-modal active-sort" id="1">Recommended<span class="check">✔</span></li>
+                            <li class="item-list-sort-modal" id="2">Lowest to highest price</li>
+                            <li class="item-list-sort-modal" id="3">Higher at lower price</li>
+                            <li class="item-list-sort-modal" id="4">A - Z</li>
+                            <li class="item-list-sort-modal" id="5">Z - A</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="container-view-filter">
+                    <p>View:</p>
+                    <i class="fa-solid fa-table-columns column-view"></i>
+                    <i class="fa-regular fa-rectangle-xmark rectangle-view"></i>
+                </div>
+            </div>
+            <div class="container-burguers">
+                <!-- aquí insertarás dinámicamente tus burguers -->
+            </div>
+
+        </section>
+        <section class="container-article">
+            <article class="info-article">
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>Online assistance</p>
+            </article>
+            <article class="info-article">
+                <i class="fa-regular fa-handshake"></i>
+                <p>Preventive measures</p>
+            </article>
+            <article class="info-article">
+                <i class="fa-solid fa-truck-pickup"></i>
+                <p>Dispatch methods</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <!------------- LOGO SECTION ---------->
+            <article class="section-footer">
+                <div class="info-section">
+                    <div class="container-logo-footer">
+                        <i class="fa-solid fa-burger"></i>
+                        <h3>BURGER HOUSE</h3>
+                    </div>
+                    <ul class="list-logo">
+                        <li class="item-logo">Home</li>
+                        <li class="item-logo">Menu</li>
+                        <li class="item-logo">Contact Us</li>
+                    </ul>
+                </div>
+            </article>
+            <!----------- CONTACT SECTION ---------->
+            <article class="section-footer">
+                <div class="info-section">
+                    <h3>Contact</h3>
+                    <ul class="list-contact">
+                        <li class="item-contact">+51 923 421 245</li>
+                        <li class="item-contact"><a href="mailto:info@burguerhouse.com">info@burguerhouse.com</a></li>
+                    </ul>
+                    <div class="container-redes">
+                        <h4>Connect</h4>
+                        <ul class="list-redes">
+                            <li class="item-redes"><i class="fa-brands fa-facebook"></i></li>
+                            <li class="item-redes"><i class="fa-brands fa-instagram"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <!------------ HOURS SECTION ----------->
+            <article class="section-footer">
+                <div class="info-section">
+                    <h3>Hours</h3>
+                    <ul class="list-hours">
+                        <li class="item-hours">Mon - Fri: 8:00 AM - 8:00 PM</li>
+                        <li class="item-hours">Saturday: 9:00 AM - 7:00 PM</li>
+                        <li class="item-hours">Sunday: 9:00 AM - 8:00 PM</li>
+                    </ul>
+
+                    <ul class="list-location">
+                        <li>Jirón Cineraria, Santiago de Surco 15023</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+        <section class="container-copyright">
+            <div class="text-terminos">
+                <small>Terminos y Condiciones</small>
+                <small>Política de Privacidad</small>
+            </div>
+
+            <div class="text-copyright">
+                <p>&copy; 2025 Burguer House. Todos los derechos reservados.</p>
+            </div>
+        </section>
+        
+    </footer>
+
+
+    <!-- MODAL FILTERS -->
+        <div class="container-modal-filter">
+            <div class="modal-filter">
+                    <p>Filter By:</p>
+                    <i class="fa-solid fa-xmark" id="btn-close-modal"></i>
+                    <div class="details-filter-modal ">
+                        <div class="title-price-filter-modal">Prices</div>
+                        <ul class="list-price-filter-modal" >
+                            <li><input type="checkbox" class="input-filter-model">Until S/20</li>
+                            <li><input type="checkbox" class="input-filter-model">S/21 - S/30</li>
+                            <li><input type="checkbox" class="input-filter-model">S/31 - S/50</li>
+                            <li><input type="checkbox" class="input-filter-model">S/51 +</li>
+                        </ul>
+                    </div>
+                    <div class="container-buttons-filters">
+                        <button class="btn-clean-filter">Clear filters</button>
+                        <button class="btn-apply-filter">Apply</button>
+                    </div>
+            </div>
+        </div>
+
+    <!-- MODAL SORT -->
+    <div class="container-modal-sort">
+        <div class="modal-sort ">
+            <p>Sort by:</p>
+            <i class="fa-solid fa-xmark" id="btn-close-modal-sort"></i>
+            <ul class="list-sort-modal">
+                <li class="item-list-sort-modal active-sort" id="1">Recommended<span class="check">✔</span></li>
+                <li class="item-list-sort-modal" id="2">Lowest to highest price</li>
+                <li class="item-list-sort-modal" id="3">Higher at lower price</li>
+                <li class="item-list-sort-modal" id="4">A - Z</li>
+                <li class="item-list-sort-modal" id="5">Z - A</li>
+            </ul>
+            <div>
+                <button>Mostrar resultados</button>
+            </di>
+
+        </div> 
+    </div>
+
+    
+
+    <!------- Nav js ------>
+    <script src="./assets/js/nav.js"></script>
+    <!------- Modal Price Filter js ----->
+    <script src="./assets/js/modal-filter.js"></script>
+    <!------- Modal Menu js ------->
+    <script src="./assets/js/menu.js"></script>
+    <!------- Modal Sort js  ------>
+    <script src="./assets/js/modal-sort.js"></script>
+    <!-- View Burguer js ------->
+    <script src="./assets/js/view-burger.js"></script>
+</body>
+</html>

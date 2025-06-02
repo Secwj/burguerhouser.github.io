@@ -1,0 +1,312 @@
+.header {
+    background-image: url("../img/img-background-header.jpg") ;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    container-type: inline-size;
+    container-name: header;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding: 9px;
+    padding-left: 10px;
+    color: var(--brown-color);
+    font-weight: bold;
+    width: 50%;
+    text-decoration: none;
+}
+.container-logo > i {
+    font-size: 1.5rem;
+}
+
+.container-bars-open {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+}
+
+#bars-open {
+    font-size: 1.5rem;
+}
+/* Barra de navegacion responsiva */
+/* Contenedor principal */
+.container-nav-list {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: none;
+    overflow-y: scroll;
+    z-index: 20;
+    overflow-x: hidden;
+}
+/* ALTERNATE APPEAR OF CONTAINER-NAV-LIST */
+.disappear-animation {
+    animation: disappear 0.5s forwards;
+}
+
+#bars-close {
+    font-size: 1.7rem;
+    padding: 10px;
+    color: #fff;
+    transition: color 0.2s ease-in-out;
+}
+
+#bars-close:hover {
+    color: #e79e5d;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    list-style: none;
+    color: #fff;
+
+}
+.nav-item {
+    margin: 8px 0px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav-item:hover {
+    color: #e0924e;
+    text-shadow: 1px 2px 1px #fff;
+}
+
+.nav-item > a {
+    text-decoration: none;
+    color: inherit;
+    text-shadow: 1px 1px 0px var(--brown-color);
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+    width: 90%;
+    text-align: center;
+}
+
+.nav-list > span {
+    color: inherit;
+    text-shadow: 1px 1px 0px var(--brown-color);
+    margin-bottom: 40px;
+}
+.nav-list > span > i {
+    margin-right: 5px;
+    text-shadow: 1px 1px 0px var(--brown-color);
+}
+.nav-item-search {
+    margin-bottom: 20px;
+}
+.input-search {
+    border: none;
+    padding: 10px 20px;
+    border-top-left-radius:30px;
+    border-bottom-left-radius:30px;
+    outline: none;
+}
+.container-btn-search {
+    display: inline-block;
+}
+
+.container-btn-search > button {
+    border: none;
+    padding: 13px 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius:30px;
+    font-weight: bold;
+    background-color: #79491f;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+/* DISEÑO DE BOTONES NAV RESPONSIVO */
+.container-login {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.btn-login {
+    background-color: transparent;
+    color:#fff;
+    font-weight: 400;
+    border: 3px solid #fff;
+    padding: 15px 40px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* CLASSES TO SHOW AND HIDE THE NAV */
+.show {
+    display: block;
+}
+
+.unshow {
+    display: none;
+}
+/* --------------- MEDIA QUERIES ------------ */
+@container header (min-width:1200px) {
+    .nav {
+        flex-direction: row;
+        height: 120px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .container-logo {
+        align-items: center;
+        justify-content: start;
+        padding: 0px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .container-logo > i {
+        font-size: 2.5rem;
+    }
+
+    #bars-open {
+        display: none;
+    }
+    .container-nav-list {
+        position: static;
+        width: 90%;
+        height: 100%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        overflow-y: hidden;
+    
+    }
+    #bars-close {
+    display: none;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        justify-content: start;
+        gap: 18px;
+        align-items:end;
+        width: 100%;
+        overflow-y:auto;
+        padding: 0px 0px;
+        padding-right:18px;
+        position: relative;
+    }
+
+    .nav-item {
+        margin: 0px 0px;
+        display: block;
+        width: auto;
+        height: auto;
+        padding: 0px 0px;
+    }
+
+    .nav-item > a {
+        text-decoration: none;
+        color: var(--brown-color);
+        /* text-shadow: 1px 1px 0px var(--brown-color); */
+        padding-bottom: 0px;
+        border-bottom: none;
+        width: auto;
+        text-align: start;
+        white-space: nowrap;
+        letter-spacing: 2.5px;
+        font-size: 1.2rem;
+        transition: color 0.5s;
+    }
+
+    .nav-item > a:hover {
+        color: #fcfbfa;
+    }
+
+    .nav-list > span {
+        color: var(--brown-color);
+        text-shadow: none;
+        margin-bottom: 40px;
+        position: absolute;
+        top:50px;
+        right: 58px;
+        letter-spacing: 1.5px;
+        
+    }
+
+    .nav-item-search {
+        position: absolute;
+        right: 50px;
+    }
+
+    .container-login {
+        position: absolute;
+        flex-direction: row;
+        top: 30px;
+        left: 0;
+        display: flex;
+        gap: 15px;
+        background-color: transparent;
+    
+    }
+
+
+    .btn-started:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .btn-login {
+        padding: 10px 30px;
+        cursor: pointer;
+        background-color:#79491f;
+        border: none;
+        border-radius: 8px;
+        color: var(--white-color);
+        box-shadow: 0 2px 0px rgba(0,0,0,0.2);
+        margin-bottom: 0px;
+        font-weight: 400;
+        transition: background 0.5s;
+    }
+    
+    .btn-login:hover {
+        background-color: #eeeeee;
+        color: var(--brown-color);
+    }
+    .container-btn-landing {
+        top: 68%;
+        
+    }
+}
+
+/* ------------- KEYFRAMES QUERIES --------------- */
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+

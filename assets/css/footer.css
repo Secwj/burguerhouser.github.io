@@ -1,0 +1,116 @@
+/* ---------------- FOOTER SECTION --------------- */
+.footer {
+    background-color: #3d1d02;
+    color: white;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.container-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    flex-direction: column;
+    max-width: 1500px;
+    gap: 10px;
+    /* padding: 20px; */
+    margin: 0 auto;
+}
+
+.section-footer {
+    padding: 50px 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container-logo-footer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 0px var(--brown-color);
+    letter-spacing: 1.9px;
+    margin-bottom: 20px;
+}
+
+.container-logo-footer > i {
+    font-size: 1.9rem;
+}
+
+.info-section > ul {
+    list-style: none;
+    line-height: 2.2;
+}
+
+.list-logo:hover{
+    cursor: pointer;
+}
+
+.info-section > h3 {
+    font-size: 1.5rem;
+    letter-spacing: 1.9px;
+    margin-bottom: 20px;
+
+}
+
+.item-contact > a {
+    color: inherit;
+    text-decoration: none;
+}
+.item-logo > a {
+    color: inherit;
+    text-decoration: none;
+}
+.item-logo > a:hover {
+    text-decoration: underline;
+}
+
+.container-redes {
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+.container-redes > h4 {
+    font-size: 1.3rem;
+}
+.list-redes {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: 1.5rem;
+    padding: 10px 0px;
+}
+.item-redes > i {
+    cursor: pointer;
+}
+.list-location {
+    margin: 20px 0px;
+}
+/* ------ COPYRIGHT SECTION ---------- */
+.container-copyright {
+    border-top: 1px solid rgb(172, 170, 170);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+}
+
+.text-terminos {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    margin-right: 50px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    margin: 20px auto;
+}
+
+.text-terminos > small:hover{
+    cursor: pointer;
+}
+
+.text-copyright {
+    text-align: center;
+}

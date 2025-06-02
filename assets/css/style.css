@@ -1,0 +1,494 @@
+* {
+    box-sizing: border-box;
+    text-wrap: balance;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Anton", sans-serif;
+    overflow-x: hidden;
+    --brown-color: #5B2B00;
+    --white-color: #fff;
+    --bg-color : #dfb600;
+}
+html {
+    overflow-x: hidden;
+}
+/* ------- LANDING SECTION */
+
+.container-landing {
+    display: flex;
+    flex-direction: column;
+    color: var(--brown-color);
+}
+
+.container-text-landing {
+    max-width: 90%;
+    padding: 10px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.info-text {
+    line-height: 1;
+    width: 100%;
+}
+
+.info-text > p {
+    border: 2px dashed;
+    width: fit-content;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+}
+
+.info-text >  h2 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 1px #fff;
+    letter-spacing: 10px;
+}
+
+.info-text > span {
+    text-shadow: 1px 1px 1px #fff;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.container-img-landing {
+    min-width: 250px;
+    width: 100%;
+    
+}
+
+.container-img-landing > img {
+    min-width: 250px;
+    width: 100%;
+}
+
+.container-btn-landing {
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+.btn-landing-reserve {
+    padding: 15px 15px;
+    background-color:#D7263D;
+    border: none;
+    border-radius: 8px;
+    color: var(--white-color);
+    font-weight: bold;
+    box-shadow: 2px 2px 2px #880000;
+    transition: background 0.2s ease-in-out;
+    animation: appear-btn-landing 0.5s forwards;
+}
+
+.btn-landing-reserve:hover {
+    background-color: #971313;
+    cursor: pointer;
+}
+
+/* ---------------- MAIN SECTION -----------------*/
+.main {
+    background-color: #0f0f0f;
+    position: relative;
+    z-index: 10;
+    padding: 20px 0px;
+}
+
+.container-main {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.container-burgers {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 30px;
+}
+
+.burguer-img {
+    opacity: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+/*  "Selecciona cualquier elemento que tenga la clase burguer-img y también la clase enter-left al mismo tiempo". */
+
+/* Entrar desde la izquierda */
+.enter-left {
+    animation: enterFromLeft 0.5s ease forwards;
+}
+
+/* Entrar desde la derecha */
+.enter-right {
+    animation: enterFromRight 0.5s ease forwards;
+}
+.container-burguer:nth-child(2) {
+    text-align: center;
+}
+/* CONTAINER TEXT 3RD BURGUER */
+.container-burguer:nth-child(3) > div {
+    order: 2;
+}
+
+.info-text-burguer {
+    font-family:sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1.7;
+    text-align: start;
+    width: 50%;
+}
+.container-img-burguer {
+    /* Necesario porque es una etiqueta picture */
+    display: block;
+    max-width: 400px;
+    width: 100%;
+    /* animation: appear-text-img-burguer both ;
+    animation-timeline: scroll();
+    animation-range-start: cover 10%; */
+    margin-top: 50px;
+    position: relative;
+}
+.container-arrows {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    padding: 0px 12px;
+    top: 0;
+}
+.arrow-left {
+    color: #fff;
+}
+.arrow-left:hover {
+    color: #e4e4e4;
+    cursor: pointer;
+}
+.arrow-right:hover {
+    color: #d1cece;
+    cursor: pointer;
+}
+.container-img-burguer > img {
+    max-width: 400px;
+    min-height: 300px;
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px;
+    box-shadow: 0px 0px 0px #1b1b1b;
+}
+.container-img-burguer-2 > img{
+    min-height: 650px;
+
+}
+
+/*-------------------------- MEDIA QUERIES -------------------*/
+@media screen and (min-width:600px) {
+
+    .container-text-landing {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 20px auto;
+        flex-direction: row;
+        margin-top: 0px;
+        padding-bottom: 150px;
+    }
+    .container-btn-landing {
+        width: fit-content;
+        margin: 60px auto;
+    }
+
+    .container-img-landing {
+        max-width: 290px;
+        width: 100%;
+        
+    }
+    
+    .container-img-landing > img {
+        max-width: 290px;
+        width: 100%;
+    }
+
+    .container-btn-landing {
+        left: 10px;
+        top: 60%;
+    }
+    
+    /* --------- MAIN SECTION --------------- */
+
+    .info-text-burguer {
+        font-size: 14px;
+        width: 35%;
+    }
+    
+    /* .container-img-burguer {
+        max-width: 500px;
+        min-height: 400px;
+    } */
+    .container-img-burguer > img {
+        max-width: 700px;
+        min-height: 400px;
+        width: 100%;
+    }
+    
+    .container-img-burguer-2 {
+        margin: 0 auto;
+    }
+
+    .container-img-burguer-2 > img{
+        max-width: 600px;
+        min-height: 600px;
+    
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .container-img-landing {
+        min-width: 400px;
+        width: 100%;
+        
+    }
+    .container-img-landing > img {
+        width: 100%;
+        min-width: 400px;
+    }
+    /* ----------- MAIN SECTION -------------  */
+    .container-burgers {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .container-burguer {
+        flex-basis: 47%;
+    }
+    /* CHNAGE WIDTH TO 70%, BECAUSE CONTAINER-BURGERS  NOW IT'S DISPLAY-FLEX = 100%*/
+
+    .container-burguer:nth-child(3) > div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-text-burguer:nth-child(1) {
+        width: 80%;
+        margin-bottom: 100px;
+    }
+
+    .container-img-burguer {
+        max-width: 330px;
+        min-height: 400px;
+        width: 100%;
+        display: flex;
+    }
+
+    .container-img-burguer-1 > img{
+        max-width: 330px;
+        margin-top: 0;
+    }
+
+    .container-img-burguer-2 {
+        margin-left: 0px;
+        max-width: 600px;
+    }
+
+    .container-img-burguer-2 > img{
+        max-width: 600px;
+        min-height: 650px;
+    }
+    .container-burguer:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        align-items: center;
+        
+    }
+}
+@media screen and (min-width:900px) {
+
+    .info-text > p {
+        padding: 5px 10px;
+        margin-bottom: 15px;
+        font-size: 1.3rem;
+    }
+    
+    .info-text >  h2 {
+        font-size: 4rem;
+        letter-spacing: 10px;
+    }
+    
+    .info-text > span {
+        font-size: 2.2rem;
+
+    }
+    .container-img-landing {
+        min-width: 460px;
+        width: 100%;
+        
+    }
+    .container-img-landing > img {
+        min-width: 460px;
+        width: 100%;
+    }
+    /* ----------- MAIN SECTION -------------- */
+    .container-img-burguer-1 > img{
+        max-width: 600px;
+        min-height: 450px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    /* HEADER SECTION */
+    
+
+    .container-text-landing {
+        margin: 100px 60px;
+        position: relative;
+    }
+    
+
+
+    .info-text > p {
+        padding: 5px 10px;
+        margin-bottom: 15px;
+        font-size: 1.8rem;
+    }
+    
+    .info-text >  h2 {
+        font-size: 7rem;
+        letter-spacing: 10px;
+    }
+    
+    .info-text > span {
+        font-size: 3.2rem;
+
+    }
+
+
+    .container-img-landing {
+        width: 100%;
+        max-width: 900px;
+        
+    }
+    
+    .container-img-landing > img {
+        width: 100%;
+        max-width: 900px;
+    }
+    /* ----------- MAIN SECTION -------------  */
+    .container-burgers {
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: center;
+    }
+    .container-burguer:nth-child(1) {
+        margin-top: 80px;
+        flex-basis: 30%;
+    }
+
+    .container-burguer:nth-child(3) {
+        flex-basis: 30%;
+        align-items: end;
+    }
+
+    .container-burguer {
+        flex-basis: 30%;
+        
+    }
+    /* Info text container 3 */
+    .container-burguer:nth-child(3) > div {
+        text-align: end;
+        margin-top: 50px;
+    }
+
+    .container-img-burguer {
+        min-height: 300px;
+    }
+
+    .container-img-burguer-1 > img{
+        max-width: 400px;
+        min-height: 300px;
+
+    }
+
+    .container-img-burguer-2 {
+        margin: 0 auto;
+    }
+
+    .container-img-burguer-2 > img{
+        max-width: 370px;
+        min-height: 550px;
+    
+    }
+}
+
+
+
+@keyframes appear-btn-landing {
+    0% {
+        opacity: 0;
+        transform: translate(0, 200%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+
+    }
+}
+
+@keyframes appear-bg-orange {
+    0% {
+        opacity: 0;
+        transform: translate(100%,0);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes appear-text-img-burguer {
+    0% {
+        opacity: 0;
+        transform: translate(-100%,0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+@keyframes enterFromLeft {
+    from {
+    opacity: 0;
+    transform: translateX(-100%);
+    }
+    to {
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+@keyframes enterFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
