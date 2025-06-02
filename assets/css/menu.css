@@ -603,6 +603,7 @@ html {
     border-radius: 25px;
     font-family: "Flamenco", system-ui;
     font-weight: bold;
+    color: var(--brown-color);
 }
 
 .btn-add-burguer:hover {
