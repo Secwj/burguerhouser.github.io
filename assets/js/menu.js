@@ -7,7 +7,7 @@ const burguers = [
         price: `16.90`,
         description: `Hamburguesa 100% carne de res a la parrilla, tomate, lechuga, mayonesa, kétchup, pepinillos y cebolla`,
         images : [
-            "../assets/img/menu/burguers/whopper-big.png",
+            "./assets/img/menu/burguers/whopper-big.png",
         ]
 
     },
@@ -16,7 +16,7 @@ const burguers = [
         price: `20.90`,
         description: `Doble hamburguesa 100% carne de res a la parrilla con nuestra exclusiva salsa BK STACKER®, queso y tocino`,
         images : [
-            "../assets/img/menu/burguers/mega-stacker.png",
+            "./assets/img/menu/burguers/mega-stacker.png",
         ]
 
     },
@@ -25,7 +25,7 @@ const burguers = [
         price: `21.90`,
         description: `Hamburguesa 100% carne de res a la parrilla, queso, tomate, lechuga, mayonesa, kétchup, pepinillos y cebolla`,
         images : [
-            "../assets/img/menu/burguers/whopper-chesse-big.png",
+            "./assets/img/menu/burguers/whopper-chesse-big.png",
         ]
 
     },
@@ -34,7 +34,7 @@ const burguers = [
         price: `22.90`,
         description: `Hamburguesa 100% carne de res a la parrilla, bondiola combinada con salsa BBQ, mayonesa, lechuga, papas al hilo, pepinillos, salsa BBQ.`,
         images : [
-            "../assets/img/menu/burguers/bondiola.png",
+            "./assets/img/menu/burguers/bondiola.png",
         ]
 
     },
@@ -43,7 +43,7 @@ const burguers = [
         price: `16.90`,
         description: `Hamburguesa de pechuga de pollo, lechuga y mayonesa`,
         images : [
-            "../assets/img/menu/burguers/king-pollo.png",
+            "./assets/img/menu/burguers/king-pollo.png",
         ]
 
     },
@@ -52,7 +52,7 @@ const burguers = [
         price: `27.90`,
         description: `Hamburguesa 100% carne de res, 75% más grande, queso, lechuga, tomate, cebollitas crujientes, BBQ y mayonesa`,
         images : [
-            "../assets/img/menu/burguers/xt-steakhouse.webp",
+            "./assets/img/menu/burguers/xt-steakhouse.webp",
         ]
 
     },
@@ -61,7 +61,7 @@ const burguers = [
         price: `26.90`,
         description: `Hamburguesa 100% carne de res, 75% más grande, queso, tocino, lechuga, tomate y mayonesa`,
         images : [
-            "../assets/img/menu/burguers/xt-queso-tocino.webp",
+            "./assets/img/menu/burguers/xt-queso-tocino.webp",
         ]
 
     },
@@ -70,7 +70,7 @@ const burguers = [
         price: `21.90`,
         description: `Hamburguesa 100% carne de res a la parrilla, queso, tocino, tomate, lechuga, mayonesa, BBQ, pepinillos y cebolla`,
         images : [
-            "../assets/img/menu/burguers/whopper-tejana-grande.webp",
+            "./assets/img/menu/burguers/whopper-tejana-grande.webp",
         ]
 
     }
